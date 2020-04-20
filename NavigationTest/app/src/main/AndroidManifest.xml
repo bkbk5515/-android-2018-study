@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.plan.navigationtest">
+
+    <!--인터넷-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--구글맵-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--전화걸기-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBbRIB_Oid8KjQfnSSFBtAICmTpJQLNyJw" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".CompanyInfoActivity" />
+        <activity android:name=".QuestionActivity" />
+        <activity android:name=".FragmentMainActivity" />
+        <activity android:name=".GoogleMapActivity" />
+        <activity android:name=".AllianceActivity" />
+        <activity android:name=".PrivacyInfoActivity" />
+        <activity android:name=".TermsServiceActivity" />
+
+    </application>
+
+</manifest>

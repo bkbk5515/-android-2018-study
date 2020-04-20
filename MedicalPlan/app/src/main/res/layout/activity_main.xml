@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.v4.widget.DrawerLayout--><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:id="@+id/drawer_layout"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:fitsSystemWindows="true">-->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/main_guideline_v_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/main_guideline_v_60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/main_guideline_h_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/main_guideline_h_90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="앱로고"
+            app:layout_constraintBottom_toBottomOf="@+id/main_guideline_h_90"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/main_guideline_v_15"
+            app:layout_constraintTop_toTopOf="@+id/main_guideline_h_10" />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/button_search"
+            android:text="검색"
+            android:textColor="#808080"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/main_guideline_h_90"
+            app:layout_constraintLeft_toLeftOf="@+id/main_guideline_v_15"
+            app:layout_constraintRight_toRightOf="@+id/main_guideline_v_60"
+            app:layout_constraintTop_toTopOf="@+id/main_guideline_h_10" />
+
+        <ImageView
+            android:id="@+id/userinfo_image_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/user"
+            app:layout_constraintBottom_toBottomOf="@+id/main_guideline_h_90"
+            app:layout_constraintLeft_toLeftOf="@+id/main_guideline_v_60"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/main_guideline_h_10" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/constraint"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/constraint">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/scroll_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/scroll_guideline_v_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/scroll_guideline_v_95"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+
+            <!--1개 묶음-->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraint1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintLeft_toLeftOf="@+id/scroll_guideline_v_5"
+                app:layout_constraintRight_toRightOf="@+id/scroll_guideline_v_95">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/button_normal"
+                    android:text="WebViewEventInfo"
+                    android:textColor="#479DFF"
+                    android:textSize="15dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+            </android.support.constraint.ConstraintLayout>
+            <!--1개 묶음 끝-->
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraint2"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                app:layout_constraintLeft_toLeftOf="@+id/scroll_guideline_v_5"
+                app:layout_constraintRight_toRightOf="@+id/scroll_guideline_v_95"
+                app:layout_constraintTop_toBottomOf="@+id/constraint1">
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/main_constraint2_v_225"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.225" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/main_constraint2_v_50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/main_constraint2_v_775"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.775" />
+
+                <ImageView
+                    android:id="@+id/imageview1"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/appointment"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@+id/main_constraint2_v_225"
+                    app:layout_constraintRight_toRightOf="@+id/main_constraint2_v_225"
+                    app:layout_constraintTop_toTopOf="@+id/constraint2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="예약내역"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/imageview1"
+                    app:layout_constraintStart_toStartOf="@+id/imageview1"
+                    app:layout_constraintTop_toBottomOf="@+id/imageview1" />
+
+                <ImageView
+                    android:id="@+id/imageview2"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/estimate"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@+id/main_constraint2_v_50"
+                    app:layout_constraintRight_toRightOf="@+id/main_constraint2_v_50"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="견적요청"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/imageview2"
+                    app:layout_constraintStart_toStartOf="@+id/imageview2"
+                    app:layout_constraintTop_toBottomOf="@+id/imageview2" />
+
+                <ImageView
+                    android:id="@+id/imageview3"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/consulting"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@+id/main_constraint2_v_775"
+                    app:layout_constraintRight_toRightOf="@+id/main_constraint2_v_775"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="전문의 상담"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/imageview3"
+                    app:layout_constraintStart_toStartOf="@+id/imageview3"
+                    app:layout_constraintTop_toBottomOf="@+id/imageview3" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraint3"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                app:layout_constraintLeft_toLeftOf="@+id/scroll_guideline_v_5"
+                app:layout_constraintRight_toRightOf="@+id/scroll_guideline_v_95"
+                app:layout_constraintTop_toBottomOf="@+id/constraint2">
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/main_constraint3_v_225"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.225" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/main_constraint3_v_50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/main_constraint3_v_775"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.775" />
+
+                <ImageView
+                    android:id="@+id/imageview4"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/list1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@+id/main_constraint3_v_225"
+                    app:layout_constraintRight_toRightOf="@+id/main_constraint3_v_225"
+                    app:layout_constraintTop_toTopOf="@+id/constraint3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="접수내역"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/imageview4"
+                    app:layout_constraintStart_toStartOf="@+id/imageview4"
+                    app:layout_constraintTop_toBottomOf="@+id/imageview4" />
+
+                <ImageView
+                    android:id="@+id/imageview5"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/list2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@+id/main_constraint3_v_50"
+                    app:layout_constraintRight_toRightOf="@+id/main_constraint3_v_50"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="진료내역"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/imageview5"
+                    app:layout_constraintStart_toStartOf="@+id/imageview5"
+                    app:layout_constraintTop_toBottomOf="@+id/imageview5" />
+
+                <ImageView
+                    android:id="@+id/imageview6"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/prescribe"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@+id/main_constraint3_v_775"
+                    app:layout_constraintRight_toRightOf="@+id/main_constraint3_v_775"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="처방전 확인"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/imageview6"
+                    app:layout_constraintStart_toStartOf="@+id/imageview6"
+                    app:layout_constraintTop_toBottomOf="@+id/imageview6" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraint4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="@+id/scroll_guideline_v_5"
+                app:layout_constraintRight_toRightOf="@+id/scroll_guideline_v_95"
+                app:layout_constraintTop_toBottomOf="@+id/constraint3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#FFFF00"
+                    android:gravity="center"
+                    android:text="#모바일 예약 가능 병원"
+                    android:textColor="@color/black"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraint5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:descendantFocusability="blocksDescendants"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraint4">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_main_list1"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:scrollbarThumbVertical="@android:color/darker_gray"
+                    android:scrollbars="none"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_weight="9" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraint6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="@+id/scroll_guideline_v_5"
+                app:layout_constraintRight_toRightOf="@+id/scroll_guideline_v_95"
+                app:layout_constraintTop_toBottomOf="@+id/constraint5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#FFFF00"
+                    android:gravity="center"
+                    android:text="#모바일 접수 가능 병원"
+                    android:textColor="@color/black"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraint7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:descendantFocusability="blocksDescendants"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraint6">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_main_list2"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:scrollbarThumbVertical="@android:color/darker_gray"
+                    android:scrollbars="none"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_weight="9" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraint8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="@+id/scroll_guideline_v_5"
+                app:layout_constraintRight_toRightOf="@+id/scroll_guideline_v_95"
+                app:layout_constraintTop_toBottomOf="@+id/constraint7">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#FFFF00"
+                    android:gravity="center"
+                    android:text="#영업중인 약국"
+                    android:textColor="@color/black"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraint9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:descendantFocusability="blocksDescendants"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraint8">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_main_list3"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scrollbarThumbVertical="@android:color/darker_gray"
+                    android:scrollbars="none"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_weight="9" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraint10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@+id/scroll_guideline_v_5"
+                app:layout_constraintRight_toRightOf="@+id/scroll_guideline_v_95"
+                app:layout_constraintTop_toBottomOf="@+id/constraint9">
+
+                <Button
+                    android:id="@+id/imageview01"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/button_signup"
+                    android:text="성형 비교견적 신청 이미지"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/imageview02"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_signup"
+                    android:text="치과 비교견적 신청 이미지"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageview01" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline">
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/bottom_guideline25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/bottom_guideline50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.50" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/bottom_guideline75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <Button
+            android:id="@+id/bottom_btn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/button_search"
+            android:text="진료현황"
+            android:textColor="#000000"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/bottom_guideline25" />
+
+        <Button
+            android:id="@+id/bottom_btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/button_search"
+            android:text="비교견적"
+            android:textColor="#000000"
+            app:layout_constraintLeft_toLeftOf="@+id/bottom_guideline25"
+            app:layout_constraintRight_toRightOf="@+id/bottom_guideline50" />
+
+        <Button
+            android:id="@+id/bottom_btn3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/button_search"
+            android:text="병원/약국 찾기"
+            android:textColor="#000000"
+            app:layout_constraintLeft_toLeftOf="@+id/bottom_guideline50"
+            app:layout_constraintRight_toRightOf="@+id/bottom_guideline75" />
+
+        <Button
+            android:id="@+id/bottom_btn4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/button_search"
+            android:text="전문의상담"
+            android:textColor="#000000"
+            app:layout_constraintLeft_toLeftOf="@+id/bottom_guideline75"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+
+    <!--<android.support.design.widget.NavigationView--><!--android:id="@+id/navigation_view"--><!--android:layout_width="wrap_content"--><!--android:layout_height="match_parent"--><!--android:layout_gravity="start"--><!--app:menu="@menu/drawer" />-->
+
+
+    <!--</android.support.v4.widget.DrawerLayout>-->

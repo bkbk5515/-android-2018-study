@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/saved_badge"
+        app:showAsAction="always"
+        android:icon="@drawable/shape_notification" />
+
+    <item android:id="@+id/action_settings"
+        android:title="새로운 알림"
+        app:showAsAction="never" />
+
+
+
+
+</menu>

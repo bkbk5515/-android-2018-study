@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "755653491445",
+    "firebase_url": "https://weetalk-44419.firebaseio.com",
+    "project_id": "weetalk-44419",
+    "storage_bucket": "weetalk-44419.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755653491445:android:f7e6b378f9b0da87",
+        "android_client_info": {
+          "package_name": "com.weetalk.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755653491445-p5r1750oca1e7001j33hn77fg6up42a7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.weetalk.android",
+            "certificate_hash": "39b7394815613bb78a9cc231213e7a4d1139ec97"
+          }
+        },
+        {
+          "client_id": "755653491445-6lshi9v2epno234p107b8uri83h3opso.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChRLpyW6dy1wEvfLgYqSYFfVpmiT5yofc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "755653491445-6lshi9v2epno234p107b8uri83h3opso.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

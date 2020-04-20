@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="56dp">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        </RelativeLayout>
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relative">
+
+                <android.support.constraint.ConstraintLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/constraint1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    tools:context=".PrivacyInfoActivity"
+                    tools:layout_editor_absoluteY="25dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="8dp"
+                        android:text="개인정보취급방침\n\n'주식회사 오늘플랜'(이하 '회사' 라 한다.) 통신비밀보호법, 전기통신사업법, 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 정보통신서비스제공자가 준수하여야 할 관련 법령상의 개인정보보호 규정을 준수하며, 관련 법령에 의거한 개인정보처리방침을 정하여 이용자 권익 보호에 최선을 다하고 있습니다.\n\n\n\n주식회사 오늘플랜의 개인정보 처리방침은 다음과 같은 내용을 담고 있습니다.\n\n1. 개인정보의 항목 및 수집방법\n2. 개인정보의 수집 및 이용목적 \n3. 개인정보의 공유 및 제공 \n4. 개인정보의 보유 및 이용기간\n5. 개인정보 파기절차 및 방법 \n6. 이용자 및 법정대리인의 권리와 그 행사방법\n7. 개인정보의 기술적/관리적 보호 대책 \n8. 개인정보보호책임자 및 담당자의 연락처 \n9. 고지의 의무\n\n1. 개인정보의 항목 및 수집방법\n가. 개인정보의 항목 \n회사는 회원가입, 고객상담, 서비스 제공 등을 위해 최초 회원 가입 당시 아래와 같은 개인정보를 수집하고 있습니다. \n\n(1) 필수항목: 전화번호, 업종, 업태 등 사용자 등록정보\n\n나. 개인정보 수집방법\n홈페이지/모바일 애플리케이션\n\n\n2. 개인정보의 수집 및 이용목적\n가. 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산\n- 컨텐츠 제공, 서비스 가입, 변경 및 해지 등을 포함한 이용계약관련 사항의 처리\n- 금융거래 본인 인증 및 금융서비스 등\n\n나. 회원관리\n- 서비스 이용에 따른 본인확인, 개인식별, 부정 이용방지와 비인가 사용방지, 가입의사 확인, 분쟁조정을 위한 기록 보존, 불만처리 등 민원처리, 고지사항 전달\n\n\n3. 개인정보의 공유 및 제공\n회사는 이용자들의 개인정보를 “2. 개인정보의 수집목적 및 이용목적”에서 고지한 범위내에서 사용하며, 이용자의 사전 동의 없이는 동 범위를 초과하여 이용하거나 원칙적으로 이용자의 개인정보를 외부에 공개하지 않습니다.\n\n\n4. 개인정보의 보유 및 이용기간\n이용자의 개인정보는 원칙적으로, 개인정보 수집 및 이용목적이 달성되면 지체 없이 파기합니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간동안 보존을 합니다.\n\n가. 회사 내부 방침에 의한 정보보유 사유\n본 서비스 계약상의 권리, 의무의 이행 \n\n나. 관련법령에 의한 정보보유 사유\n상법, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다. 이 경우 회사는 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 아래와 같습니다.\n\n- 계약 또는 청약철회 등에 관한 기록\n보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률\n보존 기간 : 5년 \n- 대금결제 및 재화 등의 공급에 관한 기록\n보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률\n보존 기간 : 5년 \n- 소비자의 불만 또는 분쟁처리에 관한 기록\n보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률\n보존 기간 : 3년 \n- 본인확인에 관한 기록\n보존 이유 : 정보통신망 이용촉진 및 정보보호 등에 관한 법률\n보존 기간 : 6개월 \n\n\n5. 개인정보 파기절차 및 방법\n이용자의 개인정보는 원칙적으로 개인정보의 수집 및 이용목적이 달성되면 지체 없이 파기합니다. 회사의 개인정보 파기절차 및 방법은 다음과 같습니다.\n\n가. 파기절차\n- 이용자가 회원가입 등을 위해 입력한 정보는 목적이 달성된 후 별도의 DB로 옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조)일정 기간 저장된 후 파기됩니다.\n- 동 개인정보는 법률에 의한 경우가 아니고서는 보유되는 이외의 다른 목적으로 이용되지 않습니다. \n\n나. 파기방법\n- 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.\n- 전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.\n\n\n6. 이용자 및 법정대리인의 권리와 그 행사방법\n- 이용자 및 법정 대리인은 언제든지 회사에 있는 자신의 정보에 대해 열람을 요청할 수 있으며, 자신의 정보에 오류가 있는 경우에는 정정 및 해지를 요구할 수 있습니다.\n\n- 이용자가 개인정보의 오류에 대한 정정을 요청하신 경우에는 정정을 완료하기 전까지 당해 개인정보를 이용 또는 제공하지 않습니다. 또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는 정정 처리결과를 지체 없이 통지하여 정정이 이루어지도록 하겠습니다.\n- 회사는 서비스 제공을 위한 최소한 개인정보만을 수집하고 있으며, 대금결제를 위해 별도의 개인정보수집을 위한 행위 없이 은행, 신용카드사의 요청에 따라 정보의 중개서비스만을 제공하고 있습니다. 또한 만일 만 14세 미만의 어린이에 관한 정보는 부모님 또는 법정대리인의 동의 없이는 수집, 이용하지 않습니다.\n- 이용자 혹은 회원사의 요청에 의해 해지 또는 삭제된 개인정보는 “수집하는 개인정보의 보유 및 이용기간”에 명시된 바에 따라 처리하고 그 외의 용도로 열람 또는 이용할 수 없도록 처리하고 있습니다. \n\n7. 개인정보의 기술적/관리적 보호 대책\n회사는 이용자들의 개인정보를 처리함에 있어 개인정보가 분실, 도난, 유출, 위조, 변조 또는 훼손되지 않도록 안전성 확보를 위하여 다음과 같은 기술적/관리적 대책을 강구하고 있습니다.\n\n가. 해킹 등에 대비한 대책\n회사는 해킹이나 컴퓨터 바이러스 등에 의해 회원의 개인정보가 유출되거나 훼손되는 것을 막기 위해 최선을 다하고 있습니다. 개인정보의 훼손에 대비해서 자료를 수시로 백업하고 있고, 최신 백신프로그램을 이용하여 이용자들의 개인정보나 자료가 유출, 위조되거나 손상되지 않도록 방지하고 있으며, SSL 보안서버 구축을 통한 암호화통신 등을 통하여 네트워크상에서 개인정보를 안전하게 전송할 수 있도록 하고 있습니다. 그리고 침입차단시스템을 이용하여 외부로부터의 무단 접근을 통제하고 있으며, 기타 시스템적으로 보안성을 확보하기 위한 가능한 모든 기술적 장치를 갖추려 노력하고 있습니다.\n\n나. 개인정보보호 주관부서의 운영\n사내 개인정보보호 주관부서를 통하여 주식회사 오늘플랜 개인정보처리방침의 이행사항 및 담당자의 준수여부를 확인하여 문제가 발견될 경우 즉시 수정하고 바로 잡을 수 있도록 노력하고 있습니다. 단, 이용자 본인의 부주의나 인터넷상의 문제로 개인정보가 유출되어 발생하는 문제에 대해 회사는 일체의 책임을 지지 않습니다.\n\n\n8. 개인정보보호책임자 및 담당자의 연락처\n이용자는 회사의 서비스를 이용하시며 발생하는 모든 개인정보보호 관련 민원을 개인정보보호책임자 혹은 담당부서로 신고하실 수 있습니다. 회사는 이용자들의 신고사항에 대해 신속하게 충분한 답변을 드릴 것 입니다.\n\n개인정보 보호책임자\n이 름 : 정기동\n직 위: 대표이사 \n전 화 : 010-3432-8235\n메 일 : jkd3865@naver.com\n\n\n9. 고지의 의무\n현 개인정보처리방침 내용 추가, 삭제 및 수정이 있을 시에는 개정 최소 7일전부터 홈페이지의 ‘공지사항’을 통해 고지할 것 입니다.\n\n\n- 시행일자: 2018년 10월 16일\n- 수정일자: 2018년 10월 17일 (수정내용 : 개인정보 보호책임자 연락처 변경)"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textview3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="30dp"
+                        android:gravity="center_horizontal"
+                        android:text="(주)오늘플랜\n대표 : 정기동\n사업자번호 : 291-88-01054\n서울특별시 강남구 봉은사로 326 남전빌딩 8층\n고객지원 : 1234-1234(평일 : 09:30~18:30)\n2018 all right reserved"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/constraint1"
+                        app:layout_constraintStart_toStartOf="@+id/constraint1"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                </android.support.constraint.ConstraintLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+
+        app:menu="@menu/drawer" />
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "995185488498",
+    "firebase_url": "https://todayplanfcmtest.firebaseio.com",
+    "project_id": "todayplanfcmtest",
+    "storage_bucket": "todayplanfcmtest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:995185488498:android:a66f9957a13fbc17",
+        "android_client_info": {
+          "package_name": "com.example.plan.todayplanfcmtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "995185488498-mrg3m84t905pcfa5bst7f0g52iq7lq4b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9w6R9ZNIaFM4cw1h-Z9YBMZuGoy8zOJE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

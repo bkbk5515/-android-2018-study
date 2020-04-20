@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="56dp">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        </RelativeLayout>
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity"
+            tools:layout_editor_absoluteY="25dp">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/fragment1_alliance_guideline05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/fragment1_alliance_guideline17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.20" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/fragment1_alliance_guideline90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/fragment1_alliance_guideline65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.65" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/fragment1_alliance_guideline70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.7" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/fragment1_alliance_guideline80"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.8" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/fragment1_alliance_guideline91"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.9" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/fragment1_alliance_guideline12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.12" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/fragment1_alliance_guideline22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.22" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/fragment1_alliance_guideline35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.35" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/fragment1_alliance_guideline45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.45" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/fragment1_alliance_guideline55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.55" />
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/respect"
+                app:layout_constraintLeft_toLeftOf="@+id/fragment1_alliance_guideline05"
+                app:layout_constraintTop_toTopOf="@+id/fragment1_alliance_guideline12" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="48dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_horizontal"
+                android:text="제휴문의"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@+id/imageview"
+                app:layout_constraintTop_toTopOf="@+id/fragment1_alliance_guideline12" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="오늘플랜과 함께하실 세무대리인분들의 연락을 기다리고 있습니다. 제휴신청시 궁금하신 사항은 문의내용란에 기입해주시면 빠른 시간내에 연락 드리겠습니다."
+                app:layout_constraintLeft_toLeftOf="@+id/fragment1_alliance_guideline05"
+                app:layout_constraintRight_toRightOf="@+id/fragment1_alliance_guideline90"
+                app:layout_constraintTop_toTopOf="@+id/fragment1_alliance_guideline22" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="성함"
+                app:layout_constraintBottom_toTopOf="@+id/fragment1_alliance_guideline45"
+                app:layout_constraintEnd_toStartOf="@+id/nameText"
+                app:layout_constraintLeft_toLeftOf="@+id/fragment1_alliance_guideline05"
+                app:layout_constraintStart_toStartOf="@+id/fragment1_alliance_guideline05"
+                app:layout_constraintTop_toTopOf="@+id/fragment1_alliance_guideline35" />
+
+            <EditText
+                android:id="@+id/nameText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="@+id/fragment1_alliance_guideline17"
+                app:layout_constraintRight_toRightOf="@+id/fragment1_alliance_guideline90"
+                app:layout_constraintBottom_toBottomOf="@+id/fragment1_alliance_guideline45"
+                app:layout_constraintTop_toTopOf="@+id/fragment1_alliance_guideline35"
+                 />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="연락처"
+                app:layout_constraintBottom_toTopOf="@+id/fragment1_alliance_guideline55"
+                app:layout_constraintEnd_toStartOf="@+id/numberText"
+                app:layout_constraintStart_toStartOf="@+id/fragment1_alliance_guideline05"
+                app:layout_constraintTop_toTopOf="@+id/fragment1_alliance_guideline45" />
+
+            <EditText
+                android:id="@+id/numberText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="@+id/fragment1_alliance_guideline17"
+                app:layout_constraintRight_toRightOf="@+id/fragment1_alliance_guideline90"
+                app:layout_constraintBottom_toBottomOf="@+id/fragment1_alliance_guideline55"
+                app:layout_constraintTop_toTopOf="@+id/fragment1_alliance_guideline45"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="문의내용"
+                app:layout_constraintBottom_toTopOf="@+id/fragment1_alliance_guideline65"
+                app:layout_constraintEnd_toStartOf="@+id/moreText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/fragment1_alliance_guideline05"
+                app:layout_constraintTop_toTopOf="@+id/fragment1_alliance_guideline55"
+                app:layout_constraintVertical_bias="0.409" />
+
+            <EditText
+                android:id="@+id/moreText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="@+id/fragment1_alliance_guideline17"
+                app:layout_constraintRight_toRightOf="@+id/fragment1_alliance_guideline90"
+                app:layout_constraintBottom_toBottomOf="@+id/fragment1_alliance_guideline65"
+                app:layout_constraintTop_toTopOf="@+id/fragment1_alliance_guideline55"/>
+
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/keyword"
+                app:layout_constraintLeft_toLeftOf="@+id/fragment1_alliance_guideline05"
+                app:layout_constraintTop_toTopOf="@+id/fragment1_alliance_guideline65"
+                 />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="23dp"
+                android:gravity="center_horizontal"
+                android:text="개인정보 취급방침"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@+id/imageview1"
+                app:layout_constraintTop_toTopOf="@+id/fragment1_alliance_guideline65"
+                 />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="오늘플랜은 고객님의 상담 신청에 대한 답변을 드리기 위해 입력하신 정보를 수집, 보관하게됩니다. 서비스 이용을 위해 개인정보 취급방침에 동의하시겠습니까?"
+                app:layout_constraintLeft_toLeftOf="@+id/fragment1_alliance_guideline05"
+                app:layout_constraintRight_toRightOf="@+id/fragment1_alliance_guideline90"
+                app:layout_constraintTop_toTopOf="@+id/fragment1_alliance_guideline70" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="동의함"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/fragment1_alliance_guideline80" />
+
+            <Button
+                android:id="@+id/nextbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="문의하기"
+                android:textColor="#8B4513"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/fragment1_alliance_guideline91"
+                />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+
+        app:menu="@menu/drawer" />
+</android.support.v4.widget.DrawerLayout>

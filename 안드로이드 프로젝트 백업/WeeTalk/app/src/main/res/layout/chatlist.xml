@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/msgText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/roomnametext" />
+
+    <EditText
+        android:id="@+id/msgText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:ems="10"
+        android:hint="메세지를 입력해 주세요."
+        android:inputType="textPersonName"
+        android:layout_toRightOf="@+id/plusbtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/sendbtn"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/map_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/map_btn"
+        android:background="#303f9f"
+        android:padding="10dp"
+        android:text="전송"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/plusbtn"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/my_recycler_view"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="3dp"
+        android:background="#c9c9c9"
+        android:text="+"
+        app:srcCompat="@drawable/plus" />
+
+    <Button
+        android:id="@+id/map_btn"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/plusbtn"
+        android:layout_below="@+id/my_recycler_view"
+        android:layout_toLeftOf="@+id/sendbtn"
+        android:layout_toStartOf="@+id/sendbtn"
+        android:background="#c9c9c9"
+        android:padding="10dp"
+        android:text="위치"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/roomnametext"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#32c5f9"
+        android:gravity="center_horizontal"
+        android:text="방제목"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

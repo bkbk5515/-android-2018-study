@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MedicalPlan</string>
+    <string name="edittext_hint1"><font size="15">이메일을 입력하세요.</font></string>
+</resources>

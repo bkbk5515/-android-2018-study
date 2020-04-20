@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+    <translate
+        android:duration="1500"
+        android:fromXDelta="100"
+        android:toXDelta="0%p"
+        android:repeatCount="0"
+        />
+</set>
+
+
+    <!--android:duration : 지속시간 입니다, 1000이 1초이며, x초동안 애니메이션을 재생하라 라는 뜻입니다-->
+    <!--android:fromAlpha : 처음 투명도 값입니다, 0.0부터 1.0까지의 범위이며, 0.0이 완전투명이고, 1.0이 불투명 입니다-->
+    <!--android:toAlpha : 끝날때 투명도 값입니다-->
+    <!--android:startOffset : 애니메이션을 시작하기 전 대기시간 입니다-->
+    <!--android:repeatCount : 반복 횟수 입니다 -1은 무한반복-->
+    <!--android:repeatMode (restart, reverse) : 반복 모드입니다 restart는 애니메이션을 처음부터 반복, reverse는 애니메이션을 반시계방향으로 다시 실행-->
+    <!--android:interpolator : 애니메이션 효과가 지속되는 동안 빠르게, 또는 느리게 효과가 진행되도록 만듭니다-->
+    <!--android:fillAfter : 애니메이션 효과가 끝난뒤에 상태를 유지할지 결정합니다, 기본은 false-->
+
+    <!--출처: http://mainia.tistory.com/2861 [녹두장군 - 상상을 현실로]>-->

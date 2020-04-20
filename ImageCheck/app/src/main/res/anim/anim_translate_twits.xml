@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+    <translate
+        android:duration="1000"
+        android:fromXDelta="0"
+        android:interpolator="@anim/cycle_5"
+        android:toXDelta="10" />
+</set>
+
+
+    <!--출처: http://mainia.tistory.com/2861 [녹두장군 - 상상을 현실로]-->

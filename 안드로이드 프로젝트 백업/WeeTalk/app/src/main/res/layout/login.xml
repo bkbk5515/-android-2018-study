@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#32c5f9">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/appname" />
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="아이디"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:id="@+id/idtext"
+        android:drawableStart="@drawable/icon1"
+        android:drawableLeft="@drawable/icon1"
+        android:layout_above="@+id/passwordtext"
+        android:layout_alignLeft="@+id/passwordtext"
+        android:layout_alignStart="@+id/passwordtext" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:id="@+id/passwordtext"
+        android:drawableStart="@drawable/icon2"
+        android:drawableLeft="@drawable/icon2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/buttonId"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_alignEnd="@+id/passwordtext"
+        android:layout_alignLeft="@+id/passwordtext"
+        android:layout_alignRight="@+id/passwordtext"
+        android:layout_alignStart="@+id/passwordtext"
+        android:layout_below="@+id/passwordtext"
+        android:layout_gravity="center"
+        android:layout_marginTop="29dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp"
+        android:text="로그인"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/buttonId"
+        android:layout_alignLeft="@+id/buttonId"
+        android:layout_alignStart="@+id/buttonId"
+        android:layout_marginTop="17dp"
+        android:layout_alignRight="@+id/buttonId"
+        android:layout_alignEnd="@+id/buttonId" />
+
+    <TextView
+        android:id="@+id/textView999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/loginButton"
+        android:layout_alignStart="@+id/loginButton"
+        android:layout_below="@+id/loginButton"
+        android:layout_marginTop="30dp"
+        android:text="아직도 회원이 아니신가요?"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView999"
+        android:layout_alignBottom="@+id/textView999"
+        android:layout_alignEnd="@+id/loginButton"
+        android:layout_alignRight="@+id/loginButton"
+        android:text="회원가입하기"
+        android:textColor="#3d5afe"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

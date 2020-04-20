@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "656335911170",
+    "firebase_url": "https://my-fcm-test-6c78d.firebaseio.com",
+    "project_id": "my-fcm-test-6c78d",
+    "storage_bucket": "my-fcm-test-6c78d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656335911170:android:91e68880a5b6df9f",
+        "android_client_info": {
+          "package_name": "com.example.konote.my_fcm_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "656335911170-ltn4d9kmmengbgkkff6thdjcpmr6r3vt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_bWP2FBhVU1Q-fSjTUpVLpp9uV8aSHmE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

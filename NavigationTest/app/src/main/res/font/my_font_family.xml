@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="UnusedAttribute">
+
+    <!-- normal -->
+    <font
+        android:font="@font/manumbarungothic"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        app:font="@font/manumbarungothic"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+
+    <!-- italic -->
+    <font
+        android:font="@font/manumbarungothic"
+        android:fontStyle="italic"
+        android:fontWeight="400"
+        app:font="@font/manumbarungothic"
+        app:fontStyle="italic"
+        app:fontWeight="400" />
+
+    <!-- bold -->
+    <font
+        android:font="@font/nanumbarungothicbold"
+        android:fontStyle="normal"
+        android:fontWeight="700"
+        app:font="@font/nanumbarungothicbold"
+        app:fontStyle="normal"
+        app:fontWeight="700" />
+
+</font-family>
+
+
+    <!--출처: http://newland435.tistory.com/37 [뉴랜드's 서랍장]-->

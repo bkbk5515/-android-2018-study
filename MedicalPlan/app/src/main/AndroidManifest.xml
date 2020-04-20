@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="android.medical.medicalplan">
+
+    <!--베가(16ver) 노티피케이션 사용을 위한 퍼미션-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--인터넷-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--네트워크 연결상태 체크-->
+    <!--http://ababqq.tistory.com/entry/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%83%81%ED%83%9C-%EC%B2%B4%ED%81%AC-getNetworkInfo-getActiveNetworkInfo-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!--구글맵-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--전화걸기-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+    <!--위치정보-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+
+        android:name=".Login.GlobalApplication"
+
+        android:allowBackup="false"
+
+        tools:replace="allowBackup,supportsRtl"
+        android:largeHeap="true"
+
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <activity android:name=".IntroActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".XXX" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".MainActivity.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".MainActivity.SearchActivity.SearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".Login.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".SignUp.SignUpActivity1" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".SignUp.SignUpActivity2" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".SignUp.PhoneNumberConfirmActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+
+
+    </application>
+
+</manifest>
+
+    <!--뱃지때문에 입력한것(googleMap때문에 백업을 false로 해야하는데 뱃지 라이브러리는 true를 요구함, 그의 따른 대처-->
+    <!--tools:replace="allowBackup,supportsRtl"-->
+
+    <!--오래된 기기에서 OutOfMemoryError 발생. 임시방편-->
+    <!--android:largeHeap="true"-->

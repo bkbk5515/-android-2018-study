@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/constraintLayout1"
+    >
+
+    <!--textview_recyclerview_id, textview_recyclerview_english, textview_recyclerview_korean-->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        app:layout_constraintLeft_toLeftOf="@+id/constraintLayout1"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout1"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/recyclerview_border">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/recyclerview_h_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/recyclerview_h_40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.40" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/recyclerview_h_60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.60" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/recyclerview_h_95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/recyclerview_v_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/recyclerview_v_95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="병/의원 이름"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="@+id/recyclerview_v_05"
+            app:layout_constraintTop_toTopOf="@+id/recyclerview_h_05" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="병/의원 주소"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="병/의원 진료시간"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="@+id/address"
+            app:layout_constraintTop_toBottomOf="@+id/address" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="진료중"
+            app:layout_constraintRight_toRightOf="@+id/recyclerview_v_95"
+            app:layout_constraintTop_toTopOf="@+id/recyclerview_h_05" />
+
+        <TextView
+            android:id="@+id/tv_condition1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#FFFF00"
+            android:gravity="center"
+            android:text="예약가능"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/line1"
+            app:layout_constraintLeft_toLeftOf="@+id/time" />
+
+        <TextView
+            android:id="@+id/tv_condition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFF00"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="견적가능"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toRightOf="@+id/tv_condition1"
+            app:layout_constraintTop_toTopOf="@+id/tv_condition1" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="공유"
+            app:layout_constraintRight_toRightOf="@+id/recyclerview_v_95"
+            app:layout_constraintBottom_toBottomOf="@+id/line1" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#6bb2ff"
+            app:layout_constraintLeft_toLeftOf="@+id/recyclerview_v_05"
+            app:layout_constraintRight_toRightOf="@+id/recyclerview_v_95"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerview_h_40" />
+
+        <TextView
+            android:id="@+id/tv_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="진료과목 : "
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="@+id/recyclerview_v_05"
+            app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#소아과, #---, #@@@"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@+id/tv_subject"
+            app:layout_constraintTop_toTopOf="@+id/tv_subject" />
+
+        <TextView
+            android:id="@+id/tv_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="테마/전문분야 : "
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="@+id/recyclerview_v_05"
+            app:layout_constraintTop_toBottomOf="@+id/tv_subject" />
+
+        <TextView
+            android:id="@+id/theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#야간진료, #내시경, #@@@"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@+id/tv_theme"
+            app:layout_constraintTop_toTopOf="@+id/tv_theme" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#6bb2ff"
+            app:layout_constraintLeft_toLeftOf="@+id/recyclerview_v_05"
+            app:layout_constraintRight_toRightOf="@+id/recyclerview_v_95"
+            app:layout_constraintTop_toTopOf="@+id/recyclerview_h_60" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="@+id/recyclerview_h_95"
+            app:layout_constraintLeft_toLeftOf="@+id/recyclerview_v_05"
+            app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/textview_recyclerview_id"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text=""-->
+    <!--app:layout_constraintHorizontal_weight="1"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toLeftOf="@+id/textview_recyclerview_english"-->
+    <!--/>-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/textview_recyclerview_english"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text=""-->
+    <!--app:layout_constraintHorizontal_weight="1"-->
+    <!--app:layout_constraintLeft_toRightOf="@+id/textview_recyclerview_id"-->
+    <!--app:layout_constraintRight_toLeftOf="@+id/textview_recyclerview_korean"-->
+    <!--/>-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/textview_recyclerview_korean"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text=""-->
+    <!--app:layout_constraintHorizontal_weight="1"-->
+    <!--app:layout_constraintLeft_toRightOf="@+id/textview_recyclerview_english"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--/>-->
+
+
+</android.support.constraint.ConstraintLayout>

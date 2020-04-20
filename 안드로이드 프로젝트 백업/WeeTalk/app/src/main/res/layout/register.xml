@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.konote.weetalk.RegisterActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#32c5f9"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="회원가입"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center">
+
+            <EditText
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:hint="아이디"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textColor="#c9c9c9"
+                android:textColorHint="#c9c9c9"
+                android:id="@+id/idtext"
+                android:drawableStart="@drawable/id"
+                android:drawableLeft="@drawable/id"
+                android:layout_marginRight="10dp"
+                />
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:background="#8187ff"
+                android:text="중복체크"
+                android:layout_gravity="center"
+                android:id="@+id/checkButton"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="#c9c9c9"
+            android:textColorHint="#c9c9c9"
+            android:id="@+id/passwordtext"
+            android:drawableStart="@drawable/pass"
+            android:drawableLeft="@drawable/pass"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:inputType="phone"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="전화번호"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="#c9c9c9"
+            android:textColorHint="#c9c9c9"
+            android:id="@+id/phonenumbertext"
+            android:drawableStart="@drawable/phone"
+            android:drawableLeft="@drawable/phone"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="#3d5afe"
+            android:text="가입하기"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

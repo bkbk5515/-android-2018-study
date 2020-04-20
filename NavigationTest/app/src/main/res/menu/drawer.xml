@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_item_attachment"
+            android:checked="false"
+            android:icon="@drawable/paper_plane"
+            android:title="무료 견적 신청" />
+        <item
+            android:id="@+id/navigation_item_images"
+            android:checked="false"
+            android:icon="@drawable/printer"
+            android:title="나의 견적 현황" />
+
+        <item
+            android:id="@+id/navigation_item_kakao"
+            android:checked="false"
+            android:icon="@drawable/msg"
+            android:title="카카오톡 문의" />
+        <item
+            android:id="@+id/navigation_item_call"
+            android:checked="false"
+            android:icon="@drawable/phone_call"
+            android:title="전화 문의" />
+
+        <item
+            android:id="@+id/navigation_item_map"
+            android:checked="false"
+            android:icon="@drawable/placeholder"
+            android:title="내 주변 세무사 찾기" />
+
+        <item
+            android:id="@+id/navigation_item_question"
+            android:checked="false"
+            android:icon="@drawable/problem"
+            android:title="자주 묻는 질문" />
+
+    </group>
+
+    <item android:title="추가 정보">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_sub_menu_item00"
+                    android:checked="false"
+                    android:icon="@drawable/respect_small"
+                    android:title="제휴문의(세무대리인 등)" />
+                <item
+                    android:id="@+id/nav_sub_menu_item01"
+                    android:checked="false"
+                    android:icon="@drawable/padlock"
+                    android:title="개인정보 취급방침" />
+                <item
+                    android:id="@+id/nav_sub_menu_item02"
+                    android:checked="false"
+                    android:icon="@drawable/user"
+                    android:title="사용자 이용약관" />
+
+                <item
+                    android:id="@+id/nav_sub_menu_item03"
+                    android:checked="false"
+                    android:icon="@drawable/settings"
+                    android:title="기존 데이터 불러오기" />
+                <item
+                    android:id="@+id/nav_sub_menu_item04"
+                    android:checked="false"
+                    android:icon="@drawable/megaphone"
+                    android:title="회사 소개" />
+            </group>
+        </menu>
+    </item>
+
+
+    <!--<item android:title="추가 정보">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_sub_menu_item01"-->
+                <!--android:checked="false"-->
+                <!--android:icon="@drawable/padlock"-->
+                <!--android:title="개인정보 취급방침" />-->
+
+            <!--<item-->
+                <!--android:id="@+id/nav_sub_menu_item02"-->
+                <!--android:checked="false"-->
+                <!--android:icon="@drawable/user"-->
+                <!--android:title="사용자 이용약관" />-->
+
+            <!--<item-->
+                <!--android:id="@+id/nav_sub_menu_item03"-->
+                <!--android:checked="false"-->
+                <!--android:icon="@drawable/settings"-->
+                <!--android:title="기존 데이터 불러오기" />-->
+
+            <!--<item-->
+                <!--android:id="@+id/nav_sub_menu_item04"-->
+                <!--android:checked="false"-->
+                <!--android:icon="@drawable/megaphone"-->
+                <!--android:title="회사 소개" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp.SignUpActivity1" >
+
+    <android.support.constraint.Guideline
+        android:id="@+id/signup_guideline_h_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/signup_guideline_h_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/signup_guideline_h_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/signup_guideline_h_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/signup_guideline_h_65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/signup_guideline_h_70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/signup_guideline_h_90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/signup_guideline_h_98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/signup_guideline_v_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/signup_guideline_v_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/signup_guideline_v_90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <ImageView
+        android:id="@+id/image_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cancel"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/signup_guideline_h_8"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@+id/signup_guideline_h_8"
+        app:layout_constraintBottom_toBottomOf="@+id/signup_guideline_h_18"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="회원가입" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="이메일"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/signup_guideline_h_18"
+        app:layout_constraintLeft_toLeftOf="@+id/signup_guideline_v_10" />
+
+    <EditText
+        android:id="@+id/email_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="이메일을 입력하세요."
+        android:inputType="text"
+        app:layout_constraintLeft_toLeftOf="@+id/signup_guideline_v_10"
+        app:layout_constraintRight_toRightOf="@+id/signup_guideline_v_50"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\@"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@+id/email_text"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id"
+        app:layout_constraintBottom_toBottomOf="@+id/email_text" />
+
+    <Button
+        android:id="@+id/mail_choice_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_normal"
+        android:gravity="center"
+        android:text="이메일 선택"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/email_text"
+        app:layout_constraintLeft_toRightOf="@+id/tv1"
+        app:layout_constraintRight_toRightOf="@+id/signup_guideline_v_90"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="수신 가능한 본인 이메일을 입력해주세요.\nCS 답변 및 비밀번호 찾기 등의 안내메일이 발송됩니다.\n유효하지 않은 이메일 주소일 경우 서비스 이용에 제한을 받을 수 있습니다."
+        app:layout_constraintBottom_toBottomOf="@+id/signup_guideline_h_50"
+        app:layout_constraintLeft_toLeftOf="@+id/signup_guideline_v_10"
+        app:layout_constraintRight_toRightOf="@+id/signup_guideline_v_90"
+        app:layout_constraintTop_toTopOf="@+id/signup_guideline_h_30" />
+
+    <TextView
+        android:id="@+id/tv_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="비밀번호"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/signup_guideline_v_10"
+        app:layout_constraintTop_toTopOf="@+id/signup_guideline_h_50" />
+
+    <EditText
+        android:id="@+id/pw_text1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호를 입력해 주세요."
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pw"
+        app:layout_constraintLeft_toLeftOf="@+id/signup_guideline_v_10"
+        app:layout_constraintRight_toRightOf="@+id/signup_guideline_v_90" />
+
+    <TextView
+        android:id="@+id/tv_pw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="비밀번호 확인"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/signup_guideline_h_65"
+        app:layout_constraintLeft_toLeftOf="@+id/signup_guideline_v_10" />
+
+    <EditText
+        android:id="@+id/pw_text2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호를 한번 더 입력해 주세요."
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pw1"
+        app:layout_constraintLeft_toLeftOf="@+id/signup_guideline_v_10"
+        app:layout_constraintRight_toRightOf="@+id/signup_guideline_v_90" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_click"
+        android:text="다음"
+        android:textColor="#479DFF"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/signup_guideline_h_98"
+        app:layout_constraintLeft_toLeftOf="@+id/signup_guideline_v_10"
+        app:layout_constraintRight_toRightOf="@+id/signup_guideline_v_90"
+        app:layout_constraintTop_toTopOf="@+id/signup_guideline_h_90" />
+
+
+</android.support.constraint.ConstraintLayout>

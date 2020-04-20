@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/Rel"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/mail"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="메일"
+        android:layout_above="@+id/map"
+        android:layout_alignLeft="@+id/map"
+        android:layout_alignStart="@+id/map" />
+
+    <Button
+        android:id="@+id/sns"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="메세지"
+        android:layout_above="@+id/animbtn"
+        android:layout_alignLeft="@+id/animbtn"
+        android:layout_alignStart="@+id/animbtn" />
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="전화"
+        android:layout_above="@+id/search"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/sharebtn"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="공유"
+        android:layout_above="@+id/shopping"
+        android:layout_toLeftOf="@+id/savebutton"
+        android:layout_toStartOf="@+id/savebutton"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp" />
+
+    <Button
+        android:id="@+id/savebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="저장" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/savebutton"
+        android:layout_alignBottom="@+id/savebutton"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="상세정보"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="10pt" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/savebutton"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <EditText
+        android:id="@+id/name1"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="이름"
+        android:inputType="text"
+        android:layout_below="@+id/imageView1"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name1"
+        android:layout_alignStart="@+id/name1"
+        android:layout_below="@+id/name1"
+        android:ems="10"
+        android:hint="대표 전화번호"
+        android:inputType="phone"
+        android:layout_alignRight="@+id/name1"
+        android:layout_alignEnd="@+id/name1" />
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/number1"
+        android:layout_alignStart="@+id/number1"
+        android:layout_below="@+id/number1"
+        android:ems="10"
+        android:hint="전화번호"
+        android:inputType="phone"
+        android:layout_alignRight="@+id/number1"
+        android:layout_alignEnd="@+id/number1" />
+
+    <EditText
+        android:id="@+id/mail1"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/number2"
+        android:layout_alignStart="@+id/number2"
+        android:layout_below="@+id/number2"
+        android:ems="10"
+        android:hint="이메일"
+        android:inputType="textEmailAddress"
+        android:layout_alignRight="@+id/number2"
+        android:layout_alignEnd="@+id/number2" />
+
+    <EditText
+        android:id="@+id/memo1"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mail1"
+        android:layout_alignStart="@+id/mail1"
+        android:layout_below="@+id/mail1"
+        android:ems="10"
+        android:hint="메모"
+        android:inputType="text"
+        android:layout_alignRight="@+id/mail1"
+        android:layout_alignEnd="@+id/mail1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/number2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/name1"
+        android:gravity="center_vertical"
+        android:text="번호1 :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="이름  :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="10pt"
+        android:layout_alignBottom="@+id/name1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/name1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/memo1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mail1"
+        android:gravity="center_vertical"
+        android:text="메모 :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/memo1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/number2"
+        android:gravity="center_vertical"
+        android:text="메일 :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mail1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/number1"
+        android:gravity="center_vertical"
+        android:text="번호2 :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="10pt" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="검색"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/call"
+        android:layout_alignStart="@+id/call" />
+
+    <Button
+        android:id="@+id/map"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="지도"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignStart="@+id/imageView1" />
+
+    <Button
+        android:id="@+id/shopping"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="쇼핑"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_alignEnd="@+id/imageView1" />
+
+    <Button
+        android:id="@+id/animbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anim"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

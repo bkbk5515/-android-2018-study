@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="56dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:id="@+id/relative" >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        </RelativeLayout>
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relative">
+
+            <android.support.constraint.ConstraintLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/constraint1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/relative"
+                tools:context=".PrivacyInfoActivity"
+                tools:layout_editor_absoluteY="25dp"
+                android:layout_marginTop="10dp">
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/activity_main_guideline05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.05" />
+                <android.support.constraint.Guideline
+                    android:id="@+id/activity_main_guideline95"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.95" />
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사업을도와줘에서\n무료 견적을 받아보세요."
+                    android:textSize="30dp"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    app:layout_constraintLeft_toLeftOf="@+id/activity_main_guideline05"
+                    app:layout_constraintRight_toRightOf="@+id/activity_main_guideline95"/>
+
+                <Button
+                    android:id="@+id/fragmentmainbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonshape"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:text="  무료 비교견적 요청하기  "
+                    android:textColor="#8B4513"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textview1"
+                    />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    app:layout_constraintLeft_toLeftOf="@+id/activity_main_guideline05"
+                    app:layout_constraintRight_toRightOf="@+id/activity_main_guideline95"
+                    app:layout_constraintTop_toBottomOf="@+id/fragmentmainbtn"
+                    android:layout_marginTop="10dp"
+                    android:background="#DCDCDC"/>
+
+                <ImageView
+                    android:id="@+id/imageview01"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/contract"
+                    app:layout_constraintLeft_toLeftOf="@+id/activity_main_guideline05"
+                    app:layout_constraintTop_toBottomOf="@+id/line1"/>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:text="이어서 작성하기"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@+id/imageview01"
+                    app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+                <ListView
+                    android:id="@+id/listview1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    app:layout_constraintLeft_toLeftOf="@+id/activity_main_guideline05"
+                    app:layout_constraintRight_toRightOf="@+id/activity_main_guideline95"
+                    app:layout_constraintTop_toBottomOf="@+id/imageview01"
+                    />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    app:layout_constraintLeft_toLeftOf="@+id/activity_main_guideline05"
+                    app:layout_constraintRight_toRightOf="@+id/activity_main_guideline95"
+                    app:layout_constraintTop_toBottomOf="@+id/listview1"
+                    android:layout_marginTop="10dp"
+                    android:background="#DCDCDC"/>
+
+                <ImageView
+                    android:id="@+id/imageview02"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/todolist"
+                    app:layout_constraintLeft_toLeftOf="@+id/activity_main_guideline05"
+                    app:layout_constraintTop_toBottomOf="@+id/line2"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="나의 비교견적 현황"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageview02"
+                    app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+                <ListView
+                    android:id="@+id/listview2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    app:layout_constraintLeft_toLeftOf="@+id/activity_main_guideline05"
+                    app:layout_constraintRight_toRightOf="@+id/activity_main_guideline95"
+                    app:layout_constraintTop_toBottomOf="@+id/imageview02"
+                    />
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    app:layout_constraintLeft_toLeftOf="@+id/activity_main_guideline05"
+                    app:layout_constraintRight_toRightOf="@+id/activity_main_guideline95"
+                    app:layout_constraintTop_toBottomOf="@+id/listview2"
+                    android:layout_marginTop="10dp"
+                    android:background="#DCDCDC"/>
+
+                <ImageView
+                    android:id="@+id/imageview03"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/customerservice"
+                    app:layout_constraintLeft_toLeftOf="@+id/activity_main_guideline05"
+                    app:layout_constraintTop_toBottomOf="@+id/line3"/>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="실시간 비교견적 현황"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintLeft_toRightOf="@+id/imageview03"
+                    app:layout_constraintTop_toBottomOf="@+id/line3" />
+
+                <ListView
+                    android:id="@+id/listview3"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    app:layout_constraintLeft_toLeftOf="@+id/activity_main_guideline05"
+                    app:layout_constraintRight_toRightOf="@+id/activity_main_guideline95"
+                    app:layout_constraintTop_toBottomOf="@+id/imageview03"
+                    />
+
+                <View
+                    android:id="@+id/line4"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    app:layout_constraintLeft_toLeftOf="@+id/activity_main_guideline05"
+                    app:layout_constraintRight_toRightOf="@+id/activity_main_guideline95"
+                    app:layout_constraintTop_toBottomOf="@+id/listview3"
+                    android:layout_marginTop="10dp"
+                    android:background="#DCDCDC"/>
+
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+
+        app:menu="@menu/drawer" />
+</android.support.v4.widget.DrawerLayout>

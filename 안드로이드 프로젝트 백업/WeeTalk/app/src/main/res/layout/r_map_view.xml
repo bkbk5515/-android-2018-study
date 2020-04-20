@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/r_mapbtn"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="0.73"
+        android:background="#c9c9c9"
+        android:padding="10dp"
+        android:text="지도 보기"
+        android:textColor="#ffffff"
+        android:textSize="12dp" />
+
+
+    <TextView
+        android:id="@+id/r_mTime"
+        android:layout_width="197dp"
+        android:layout_height="20dp"
+        android:gravity="right"
+        android:layout_below="@+id/r_mapbtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>

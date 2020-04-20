@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <TextView
+        android:id="@+id/textview01"
+        android:layout_width="334dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="@+id/imageview01"
+        android:gravity="center_vertical"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imageview01"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/zoom" />
+
+</RelativeLayout>
